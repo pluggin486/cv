@@ -1,6 +1,0 @@
-{
-  "name": "freelance-assistant",
-  "private": true,
-  "version": "0.1.0",
-  "description": "Local-only Python CLI for matching freelance project notifications"
-}
