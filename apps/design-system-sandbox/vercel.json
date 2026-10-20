@@ -1,0 +1,6 @@
+{
+  "framework": "nuxtjs",
+  "installCommand": "cd ../.. && npm ci",
+  "buildCommand": "cd ../.. && npx nx build design-system-sandbox --prod",
+  "outputDirectory": ".vercel/output"
+}

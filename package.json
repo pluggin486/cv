@@ -1,0 +1,37 @@
+{
+  "name": "bussines-card",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "build": "nx run portfolio:build",
+    "build:all": "nx run-many -t build",
+    "build:affected": "nx affected -t build",
+    "dev": "nx run portfolio:serve",
+    "dev:sandbox": "nx run design-system-sandbox:serve",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@rolftech/core-ui": "0.1.0",
+    "nuxt": "^4.6.2",
+    "vue": "^3.5.43",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "jiti": "2.4.2",
+    "nx": "23.3.0",
+    "playwright": "^1.64.1",
+    "typescript": "5.9",
+    "vite": "^8.3.4",
+    "vue-tsc": "^3.3.13"
+  }
+}

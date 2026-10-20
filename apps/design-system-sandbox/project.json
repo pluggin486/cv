@@ -1,0 +1,23 @@
+{
+  "name": "design-system-sandbox",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/design-system-sandbox/app",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt build",
+        "cwd": "apps/design-system-sandbox"
+      },
+      "outputs": ["{workspaceRoot}/apps/design-system-sandbox/.vercel/output"]
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nuxt dev --no-fork --host 0.0.0.0 --port 3001",
+        "cwd": "apps/design-system-sandbox"
+      }
+    }
+  }
+}

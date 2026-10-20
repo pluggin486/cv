@@ -1,0 +1,16 @@
+{
+  "name": "rolftech-core-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/rolftech-core-ui/src",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build --config libs/rolftech-core-ui/vite.config.ts",
+        "cwd": "."
+      },
+      "outputs": ["{workspaceRoot}/libs/rolftech-core-ui/dist"]
+    }
+  }
+}

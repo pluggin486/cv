@@ -1,0 +1,80 @@
+@import "../../../../../libs/rolftech-core-ui/src/styles/tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--motion-03) var(--ease-standard), color var(--motion-03) var(--ease-standard);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- page transitions ---------- */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity var(--motion-03) var(--ease-standard), transform var(--motion-03) var(--ease-standard);
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-2px);
+}
+
+/* ---------- reduced motion: анимации не нужны для смысла ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

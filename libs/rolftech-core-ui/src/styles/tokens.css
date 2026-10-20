@@ -1,0 +1,83 @@
+/*
+ * ROLFTECH Core — design tokens
+ * Реконструкция `colors_and_type.css` из preview-архива:
+ * нейтральная база + один красный функциональный сигнал,
+ * spacing 8 / 12 / 20 / 32 / 56 / 96, radius 8 / 12 / pill.
+ *
+ * Motion-шкала и кривые — по контракту Carbon (productive):
+ * микровзаимодействия 70–150ms ease-out, крупные переходы 240–400ms.
+ */
+:root {
+  /* ---------- color core (light) ---------- */
+  --bg: #f5f5f3;            /* фон приложения */
+  --surface: #ffffff;       /* поверхность карточек и панелей */
+  --fg: #17171a;            /* основной текст */
+  --muted: #67676e;         /* вторичный текст */
+  --border: #e4e4e0;        /* границы и разделители */
+  --fg-soft: rgba(23, 23, 26, 0.06); /* hover-заливка нейтральных элементов */
+
+  /* ---------- functional signal ---------- */
+  --accent: #e1251b;        /* сигнал: активный таб, акцентные линии */
+  --accent-strong: #b41e20; /* читаемый красный для текста и primary-action */
+  --accent-soft: #fce9e6;   /* мягкая подложка статуса «В работе» */
+
+  /* ---------- radius ---------- */
+  --radius: 8px;            /* control */
+  --radius-lg: 12px;        /* card */
+  --radius-pill: 999px;     /* status */
+
+  /* ---------- shadow (только отдельные слои) ---------- */
+  --shadow-layer: 0 1px 2px rgba(23, 23, 26, 0.05), 0 8px 24px rgba(23, 23, 26, 0.08);
+  --shadow-modal: 0 24px 64px rgba(23, 23, 26, 0.18);
+
+  /* ---------- spacing (базовый шаг 4px) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 20px;
+  --space-5: 32px;
+  --space-6: 56px;
+  --space-7: 96px;
+
+  /* ---------- typography ---------- */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+
+  --text-display: clamp(30px, 6vw, 52px);
+  --text-display-l: clamp(42px, 7vw, 78px);
+  --text-body: 16px;
+  --text-mono: 13px;
+  --text-small: 12px;
+  --text-eyebrow: 11px;
+
+  /* ---------- layout ---------- */
+  --container: 1200px;
+
+  /* ---------- motion (Carbon productive scale) ---------- */
+  --motion-01: 70ms;   /* button/toggle press */
+  --motion-02: 110ms;  /* fade, hover-состояния */
+  --motion-03: 150ms;  /* короткие перемещения, page transition */
+  --motion-04: 240ms;  /* раскрытие, toast */
+  --motion-05: 400ms;  /* крупные раскрытия */
+
+  --ease-standard: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --ease-exit: cubic-bezier(0.2, 0, 1, 0.9);
+  --ease: var(--ease-standard);
+}
+
+/* ---------- dark theme (инверсия тех же токенов) ---------- */
+:root[data-theme='dark'] {
+  --bg: #131316;
+  --surface: #1b1b1f;
+  --fg: #f0f0ee;
+  --muted: #9a9aa2;
+  --border: #2b2b31;
+  --fg-soft: rgba(240, 240, 238, 0.07);
+
+  --accent: #e1251b;
+  --accent-strong: #ff6f61;
+  --accent-soft: rgba(225, 37, 27, 0.16);
+
+  --shadow-layer: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-modal: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
