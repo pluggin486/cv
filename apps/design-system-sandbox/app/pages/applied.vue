@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH — рабочее окно сделки' })
+useHead({ title: 'SS — рабочее окно сделки' })
 </script>
 
 <template>

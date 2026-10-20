@@ -2,12 +2,12 @@
   <div class="card-assets">
     <p class="eyebrow">SOURCE EVIDENCE</p>
     <div class="asset-frame">
-      <div class="asset-preview" role="img" aria-label="Место сохранённого preview исходного UI-kit ROLFTECH">
-        <span class="asset-preview__meta">rolftech-ui-kit-preview.png</span>
+      <div class="asset-preview" role="img" aria-label="Место сохранённого preview исходного UI-kit SS">
+        <span class="asset-preview__meta">ss-ui-kit-preview.png</span>
         <span class="asset-preview__note">source preview не передан в архив</span>
       </div>
       <div class="asset-copy">
-        <strong>rolftech-ui-kit-preview.png</strong>
+        <strong>ss-ui-kit-preview.png</strong>
         <p>Сохранённый source preview: нейтральная поверхность, красный сигнал и рабочая карточка сделки.</p>
       </div>
     </div>

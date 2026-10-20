@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — цвет' })
+useHead({ title: 'SS Core — цвет' })
 </script>
 
 <template>

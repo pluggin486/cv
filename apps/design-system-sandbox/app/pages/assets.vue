@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — brand assets' })
+useHead({ title: 'SS Core — brand assets' })
 </script>
 
 <template>

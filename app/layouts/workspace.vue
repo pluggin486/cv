@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { SideNavGroup } from '@rolftech/core-ui'
+import type { SideNavGroup } from '@ss/core-ui'
 
 const route = useRoute()
 const router = useRouter()

@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@rolftech/core-ui": "0.1.0"
+    "@ss/core-ui": "0.1.0"
   }
 }

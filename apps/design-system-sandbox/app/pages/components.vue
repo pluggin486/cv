@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — компоненты' })
+useHead({ title: 'SS Core — компоненты' })
 </script>
 
 <template>

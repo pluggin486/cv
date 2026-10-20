@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — радиусы и тени' })
+useHead({ title: 'SS Core — радиусы и тени' })
 </script>
 
 <template>

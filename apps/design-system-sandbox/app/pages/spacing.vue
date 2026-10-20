@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — spacing' })
+useHead({ title: 'SS Core — spacing' })
 </script>
 
 <template>

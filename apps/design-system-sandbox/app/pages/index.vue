@@ -8,7 +8,7 @@ import PreviewComponentsCard from '~/components/preview/ComponentsCard.vue'
 import PreviewAssetsCard from '~/components/preview/AssetsCard.vue'
 import PreviewAppliedCard from '~/components/preview/AppliedCard.vue'
 
-useHead({ title: 'ROLFTECH Core — обзор системы' })
+useHead({ title: 'SS Core — обзор системы' })
 
 const reviewItems = [
   {
@@ -84,7 +84,7 @@ const activeItem = computed(() => reviewItems[selectedIndex.value]!)
 const select = (index: number) => {
   selectedIndex.value = index
   if (import.meta.client) {
-    localStorage.setItem('rolftech-preview-selection', String(index))
+    localStorage.setItem('ss-preview-selection', String(index))
   }
 }
 
@@ -103,7 +103,7 @@ const onKeydown = (event: KeyboardEvent, index: number) => {
 }
 
 onMounted(() => {
-  const saved = Number(localStorage.getItem('rolftech-preview-selection'))
+  const saved = Number(localStorage.getItem('ss-preview-selection'))
   if (Number.isInteger(saved) && saved >= 0 && saved < reviewItems.length) {
     selectedIndex.value = saved
   }
@@ -169,7 +169,7 @@ onMounted(() => {
     </section>
 
     <footer class="footer">
-      <span>ROLFTECH Core · UI-kit реализован на Nuxt 4 + Vue 3</span>
+      <span>SS Core · UI-kit реализован на Nuxt 4 + Vue 3</span>
       <span class="meta mono">ONE WORKSPACE / ONE SIGNAL</span>
     </footer>
   </main>

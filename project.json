@@ -10,7 +10,7 @@
         "command": "nuxt build",
         "cwd": "."
       },
-      "outputs": ["{workspaceRoot}/.output"]
+      "outputs": ["{workspaceRoot}/.vercel/output"]
     },
     "serve": {
       "executor": "nx:run-commands",

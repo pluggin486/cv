@@ -7,7 +7,7 @@ const isOverview = computed(() => route.path === '/')
   <div class="app-shell">
     <header class="preview-nav">
       <div class="nav-inner">
-        <NuxtLink class="wordmark" to="/">ROLFTECH <span>/ CORE</span></NuxtLink>
+        <NuxtLink class="wordmark" to="/">SS <span>/ CORE</span></NuxtLink>
         <span class="nav-meta">{{ isOverview ? 'ОБЗОР СИСТЕМЫ' : 'ДИЗАЙН-СИСТЕМА' }}</span>
       </div>
     </header>

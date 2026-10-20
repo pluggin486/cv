@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: 'ROLFTECH Core — типографика' })
+useHead({ title: 'SS Core — типографика' })
 </script>
 
 <template>

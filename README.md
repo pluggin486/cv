@@ -1,6 +1,6 @@
-# ROLFTECH Core workspace
+# SS Core workspace
 
-Nx monorepo for the portfolio, the ROLFTECH Core design-system sandbox, and its shared Vue UI library.
+Nx monorepo for the portfolio, the SS Core design-system sandbox, and its shared Vue UI library.
 
 ## Projects
 
@@ -8,7 +8,7 @@ Nx monorepo for the portfolio, the ROLFTECH Core design-system sandbox, and its 
 | --- | --- | --- |
 | `portfolio` | repository root | Семён Сергеев's frontend portfolio |
 | `design-system-sandbox` | `apps/design-system-sandbox` | Standalone design-system overview and examples |
-| `rolftech-core-ui` | `libs/rolftech-core-ui` | Buildable Vue components and design tokens (`@rolftech/core-ui`) |
+| `ss-core-ui` | `libs/ss-core-ui` | Buildable Vue components and design tokens (`@ss/core-ui`) |
 
 The portfolio remains at `/`. The sandbox overview is also `/` on its own app; its pages are `/colors`, `/typography`, `/spacing`, `/radius-shadows`, `/components`, `/assets`, and `/applied`.
 
@@ -33,4 +33,4 @@ Create a Vercel project from this repository with Root Directory `apps/design-sy
 
 ## UI library
 
-Components live in `libs/rolftech-core-ui/src/components`; design tokens live in `libs/rolftech-core-ui/src/styles/tokens.css`. Nuxt apps scan the shared component directory for typed `Ui*` auto-imports and consume the generated package CSS.
+Components live in `libs/ss-core-ui/src/components`; design tokens live in `libs/ss-core-ui/src/styles/tokens.css`. Nuxt apps scan the shared component directory for typed `Ui*` auto-imports and consume the generated package CSS.
