@@ -30,3 +30,6 @@ logs
 .nx/migrate-runs
 .vercel
 vite.config.*.timestamp*
+
+# Local freelance profiles, incoming notifications, generated drafts and quota state
+.local/
